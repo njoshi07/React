@@ -3,23 +3,14 @@ import { render } from "react-dom";
 import City from "./City";
 
 const App = () => {
-  return React.createElement("div", { id: "someting-important" }, [
-    React.createElement(City, {
-      state: "Nebraska",
-      city: "Omaha",
-      weather: "Cold",
-    }),
-    React.createElement(City, {
-      state: "California",
-      city: "San Francisco",
-      weather: "Warm",
-    }),
-    React.createElement(City, {
-      state: "Illinois",
-      city: "Chicago",
-      weather: "Windy",
-    }),
-  ]);
+  return (
+    <div>
+      <h1 id="someting-important">Cities By there Weather</h1>
+      <City state="Nebraska" city="Omaha" weather="Cold" />
+      <City state="California" city="San Francisco" weather="Warm" />
+      <City state="Illinois" city="Chicago" weather="Windy" />
+    </div>
+  );
 };
 
-render(React.createElement(App), document.getElementById("root"));
+render(<App />, document.getElementById("root"));
