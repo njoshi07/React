@@ -1,14 +1,12 @@
 import React from "react";
 import { render } from "react-dom";
-import City from "./City";
+import SearchParams from "./SearchParams";
 
 const App = () => {
   return (
     <div>
-      <h1 id="someting-important">Cities By there Weather</h1>
-      <City state="Nebraska" city="Omaha" weather="Cold" />
-      <City state="California" city="San Francisco" weather="Warm" />
-      <City state="Illinois" city="Chicago" weather="Windy" />
+      <p id="someting-important">Animals and their Breeds</p>
+      <SearchParams />
     </div>
   );
 };
